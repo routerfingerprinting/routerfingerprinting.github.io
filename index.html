@@ -1,1 +1,143 @@
+<!doctype html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom overrides -->
+    <link rel="stylesheet" href="css/custom.css">
+    <!--    better fonts-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css">
+    <title>Router Fingerprinting Project</title>
+</head>
+
+
+<body>
+    <!-- Put nav into container to center it on the page -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!--	            <a class="navbar-brand" href="#">↑</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav container">
+                    <ul class="navbar-nav justify-content-between w-100">
+                        <!-- <li><a class="nav-item nav-link" href="#home" style="font-family: verdana"><b>Intro</b></a></li> -->
+                        <!--          <a class="nav-item nav-link" href="#tools">Software and Tools</a> -->
+                        <!-- <li><a class="nav-item nav-link" href="#home" style="font-family: verdana"><b>Home</b></a></li> -->
+                        <li><a class="nav-item nav-link" href="#publications">Publications</a></li>
+                        <li><a class="nav-item nav-link" href="#data">Data Request</a></li>
+                        <li><a class="nav-item nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div id="home" style="padding-top: 3em">
+            <h1 id="service">Router Fingerprinting Project</h1>
+
+            <!-- <article class="px-4 py-2 row"> -->
+
+            <div class="more-pad">
+                <p>On this page, we present the results of an ongoing efforts to understand router deployments on the Internet.</p>
+            </div>
+
+
+            <!-- </article> -->
+        </div>
+<div id="publications">
+    <h2>Publications</h2>
+
+
+        <div id="lfp">
+
+            <h3>Illuminating Router Vendor Diversity Within Providers and Along Network Paths</h3>
+ 
+            <article class="px-4 py-2 row">
+                <a href="imc2023-lfp.pdf" class="paper-screenshot-link col-12 col-md-3">
+                    <img src="imc2023-lfp.jpg" class="img-fluid img-thumbnail paper-screenshot" alt="Download paper: Illuminating Router Vendor Diversity Within Providers and Along Network Paths" width="800" height="1071"></a>
+                <div class="col-12 col-md-9">
+                    <p><b>Abstract.</b>
+                        The Internet architecture has facilitated a multi-party, distributed, and heterogeneous physical infrastructure where routers from different vendors connect and inter-operate via IP. Such vendor heterogeneity can have important security and policy implications. For example, a security vulnerability may be specific to a particular vendor and implementation, and thus will have a disproportionate impact on particular networks and paths if exploited. From a policy perspective, governments are now explicitly banning particular vendors— or have threatened to do so.
+                        Despite these critical issues, the composition of router vendors across the Internet remains largely opaque. Remotely identifying router vendors is challenging due to their strict security posture, indistinguishability due to code sharing across vendors, and noise due to vendor mergers. We make progress in overcoming these challenges by developing LFP, a tool that improves the coverage, accuracy, and efficiency of router fingerprinting as compared to the current state-of- the-art. We leverage LFP to characterize the degree of router vendor homogeneity within networks and the regional distribution of vendors. We then take a path-centric view and apply LFP to better understand the potential for correlated failures and fate-sharing. Finally, we perform a case study on inter- and intra-United States data paths to explore the feasibility to make vendor-based routing policy decisions, i.e., whether it is possible to avoid a particular vendor given the current infrastructure.
+                    </p>
+                    <p><b>Authors.</b> Taha Albakour, <a href="https://olivergasser.net/">Oliver Gasser</a>, <a href="https://rbeverly.net/">Robert Beverly</a>, and <a href="https://gsmaragd.github.io/">Georgios Smaragdakis</a>.</p>
+                    <div class="row row-cols-auto paper-buttons"><a href="imc2023-lfp.pdf" class="btn btn-primary col paper-button">Download paper</a>
+                        <a href="lfp.bib" class="btn btn-outline-secondary col paper-button">Bibtex</a>
+                    </div>
+                </div>
+            </article> 
+        </div>
+
+        <div id="alias">
+
+            <h3>Pushing Alias Resolution to the Limit</h3>
+
+            <article class="px-4 py-2 row">
+                <a href="imc2023-alias.pdf" class="paper-screenshot-link col-12 col-md-3">
+                    <img src="imc2023-alias.jpg" class="img-fluid img-thumbnail paper-screenshot" alt="Download paper: Pushing Alias Resolution to the Limit" width="800" height="1071"></a>
+                <div class="col-12 col-md-9">
+                    <p><b>Abstract.</b>
+                        In this paper, we show that utilizing multiple protocols offers a unique opportunity to improve IP alias resolution and dual-stack inference substantially. Our key observation is that prevalent protocols, e.g., SSH and BGP, reply to unsolicited requests with a set of values that can be combined to form a unique device identifier. More importantly, this is possible by just completing the TCP handshake. Our empirical study shows that utilizing readily available scans and our active measurements can double the discovered IPv4 alias sets and more than 30x the dual-stack sets compared to the state-of-the-art techniques. We provide insights into our method's accuracy and performance compared to popular techniques.
+                    </p>
+                    <p><b>Authors.</b> Taha Albakour, <a href="https://olivergasser.net/">Oliver Gasser</a>, and <a href="https://gsmaragd.github.io/">Georgios Smaragdakis</a>.</p>
+                    <div class="row row-cols-auto paper-buttons"><a href="imc2023-alias.pdf" class="btn btn-primary col paper-button">Download paper</a>
+                        <a href="alias.bib" class="btn btn-outline-secondary col paper-button">Bibtex</a>
+                    </div>
+                </div>
+            </article> 
+        </div>
+     </div>
+<!-- 
+        <div id="partners">
+            <h2>Partners</h2>
+
+            <article class="px-4 py-2 row">
+            <div class="row align-items-center">
+                <div class="col-md-3 mr-auto my-3 logo-container">
+                    <a href="https://www.tu.berlin" class="a-img"><img src="logos/tu-berlin-logo.svg" alt="TU Berlin logo" class="img-fluid logo" /></a>
+                </div>
+                <div class="col-md-3 ml-auto my-3 logo-container">
+                    <a href="https://www.mpi-inf.mpg.de" class="a-img"><img src="logos/mpilogo-inf-narrow.png" alt="MPI for Informatics logo" class="img-fluid logo" /></a>
+                </div>
+                <div class="col-md-3 mx-auto my-3 logo-container">
+                    <a href="https://nps.edu/" class="a-img"><img src="logos/Naval_Postgraduate_School_emblem.svg" alt="NPS logo" class="img-fluid logo" /></a>
+                </div>
+                <div class="col-md-3 mx-auto my-3 logo-container">
+                    <a href="https://www.tudelft.nl/" class="a-img"><img src="logos/tudelft.jpg" alt="TU Delft logo" class="img-fluid logo" /></a>
+                </div>
+            </div> 
+
+           <p><b> Acknowledgments </b> 
+ This work was funded in part by the European Research Council (ERC) Starting Grant <a
+href="https://cordis.europa.eu/project/id/679158">ResolutioNet (ERC-StG-679158)</a>, BMBF BIFOLD 01IS18025A and 01IS18037A, and the U.S. National Science Foundation NSF <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1855614">CNS-1855614</a>.</p>
+        </div>
+ -->
+        <div id='data'>
+
+            <h2>Data Request</h2>
+
+            <p>We make the raw measurement results available to fellow researchers.
+                To request access, please send us an
+                <a href="mailto:info@snmpv3.io?subject=SNMPv3%20Measurement%20Service&body=Hi%2C%0A%0APlease%20grant%20me%20access%20to%20the%20SNMPv3%20Measurement%20Service.%20My%20name%20is%20YOURNAMEHERE%2C%20my%20affiliation%20is%20CHANGEME%20and%20I%20want%20to%20use%20the%20data%20for%20FILLTHIS.%20Thank%20you.%0A%0AKind%20regards"> email</a>.
+            </p>
+
+        </div>
+        <div id="contact">
+            <h2>Contact</h2>
+            <!-- <article class="px-4 py-2 row"> -->
+            <p>You can contact us at <a href="mailto:info@snmpv3.io">info@snmpv3.io</a>.</p>
+            <!-- </article> -->
+
+        </div>
+
+</body>
+
+</html>
