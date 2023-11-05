@@ -72,7 +72,7 @@
                     <div class="row row-cols-auto paper-buttons">
                         <a href="imc2023-lfp.pdf" class="btn btn-primary col paper-button">Download paper</a>
                         <a href="lfp.bib" class="btn btn-outline-secondary col paper-button">Bibtex</a>
-                        <a href="lfp-signatures.tar" class="btn btn-outline-secondary col paper-button">LFP Signatures</a>
+                        <!-- <a href="lfp-signatures.tar" class="btn btn-outline-secondary col paper-button">LFP Signatures</a> -->
                     </div>
                 </div>
             </article> 
@@ -93,10 +93,32 @@
                     <div class="row row-cols-auto paper-buttons">
                         <a href="imc2023-alias.pdf" class="btn btn-primary col paper-button">Download paper</a>
                         <a href="alias.bib" class="btn btn-outline-secondary col paper-button">Bibtex</a>
-                        <a href="alias-datasets.tar.xz" class="btn btn-outline-secondary col paper-button">Dataset</a>
+                        <!-- <a href="alias-datasets.tar.xz" class="btn btn-outline-secondary col paper-button">Dataset</a> -->
                     </div>
                 </div>
             </article> 
+        </div>
+
+        <div id="snmpv3"> 
+            <h3>Third Time’s Not a Charm: Exploiting SNMPv3 for Router Fingerprinting</h3>
+
+                <article class="px-4 py-2 row">
+                <a href="albakour2021third.pdf" class="paper-screenshot-link col-12 col-md-3">
+                <img src="albakour2021third.jpg" class="img-fluid img-thumbnail paper-screenshot" alt="Download paper: Third Time's Not a Charm: Exploiting SNMPv3 for Router Fingerprinting" width="800" height="1071"></a>
+                <div class="col-12 col-md-9">
+                    <p><b>Abstract.</b>
+                        In this paper, we show that adoption of the SNMPv3 network management protocol standard offers a unique—but likely unintended—opportunity for remotely fingerprinting network infrastructure in the wild. Specifically, by sending unsolicited and unauthenticated SNMPv3 requests, we obtain detailed information about the configuration and status of the network device including vendor, uptime, and the number of restarts. More importantly, the reply contains a persistent and strong identifier that allows for lightweight Internet-scale alias resolution and dual IPv4/IPv6 stack association.
+                        By launching active Internet-wide SNMPv3 scan campaigns, we show that our technique can fingerprint more than 12 million devices and around 350k network routers. Not only is our technique lightweight and accurate, it is complementary to existing alias resolution, dual-stack inference, and fingerprinting approaches. Our analysis not only provides fresh insights into the router deployment strategies of network operators worldwide, but also highlights potential vulnerabilities of SNMPv3 as currently deployed.
+                    </p>
+                    <p><b>Authors.</b> Taha Albakour, <a href="https://olivergasser.net/">Oliver Gasser</a>, <a href="https://rbeverly.net/">Robert Beverly</a>, and <a href="https://gsmaragd.github.io/">Georgios Smaragdakis</a>.</p>
+                    <div class="row row-cols-auto paper-buttons"><a href="albakour2021third.pdf" class="btn btn-primary col paper-button">Download paper</a>
+                        <a href="albakour2021third.bib" class="btn btn-outline-secondary col paper-button">Bibtex</a>
+                        <a href="https://snmpv3.io/" class="btn btn-outline-secondary col paper-button">SNMPv3 Measurement Service</a>
+
+                    </div>
+                </div>
+            </article>
+
         </div>
      </div>
 <!-- 
@@ -128,10 +150,45 @@ href="https://cordis.europa.eu/project/id/679158">ResolutioNet (ERC-StG-679158)<
 
             <h2>Data Request</h2>
 
-            <p>We make the raw measurement results available to fellow researchers.
+            <p>We make the raw measurement data available to fellow researchers.
                 To request access, please send us an
-                <a href="mailto:info@snmpv3.io?subject=SNMPv3%20Measurement%20Service&body=Hi%2C%0A%0APlease%20grant%20me%20access%20to%20the%20SNMPv3%20Measurement%20Service.%20My%20name%20is%20YOURNAMEHERE%2C%20my%20affiliation%20is%20CHANGEME%20and%20I%20want%20to%20use%20the%20data%20for%20FILLTHIS.%20Thank%20you.%0A%0AKind%20regards"> email</a>.
+                <a href="mailto:info@snmpv3.io?subject=Data%20Request&body=Hi%2C%0A%0APlease%20grant%20me%20access%20to%20the%20raw%20measurement%20data%20for%20{DATSET}.%20My%20name%20is%20{YOURNAMEHERE}%2C%20my%20affiliation%20is%20{CHANGEME}%20and%20I%20want%20to%20use%20the%20data%20for%20{FILLTHIS}.%20Thank%20you.%0A%0AKind%20regards"> email</a>.
             </p>
+
+            
+            <p> You can find the signature list of the Router Vendor Diversity paper <a href="url">here</a>. 
+            If you are using these signatures in your publication, please cite our work with the following reference:
+
+            <small>
+                <code style="text-align: left; background-color: #F6F6F6; border-color: black">
+                    @inproceedings{IMC2023-Fingerprinting,<br>
+                    &nbsp;&nbsp; title = {Illuminating Router Vendor Diversity Within Providers and Along Network Paths},<br>
+                    &nbsp;&nbsp; author = {Taha Albakour and Oliver Gasser and Robert Beverly and Georgios Smaragdakis},<br>
+                    &nbsp;&nbsp; booktitle = {Proceedings of the 2023 ACM Internet Measurement Conference},<br>
+                    &nbsp;&nbsp; year = {2023},<br>
+                    &nbsp;&nbsp; doi = {10.1145/3618257.3624813}<br>
+                    }
+                </code>
+            </small>
+            </p>
+
+            <p>You can alias find the alias and dual-stack datasets from the Alias Resolution paper <a href="url">here</a>.
+
+            If you are using this datasets in your publication, please cite our work with the following reference:
+
+              <small>
+                <code style="text-align: left; background-color: #F6F6F6; border-color: black">
+                    @inproceedings{IMC2023-Alias,<br>
+                    &nbsp;&nbsp; title = {Pushing Alias Resolution to the Limit},<br>
+                    &nbsp;&nbsp; author = {Taha Albakour and Oliver Gasser and Georgios Smaragdakis},<br>
+                    &nbsp;&nbsp; booktitle = {Proceedings of the 2023 ACM Internet Measurement Conference},<br>
+                    &nbsp;&nbsp; year = {2023},<br>
+                    &nbsp;&nbsp; doi = {10.1145/3618257.3624840}<br>
+                    }
+                </code>
+            </small>
+            </p>
+
 
         </div>
         <div id="contact">
